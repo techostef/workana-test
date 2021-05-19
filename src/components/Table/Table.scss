@@ -1,0 +1,66 @@
+$colorBorder: rgb(148, 148, 148);
+$colorHeader: rgb(122, 122, 122);
+
+.table {
+    width: 100%;
+    height: 100%;
+    display: grid;
+
+    .table-header-item {
+        display: flex;
+        .icon {
+            margin-right: 10px;
+        }
+        border-top: 1px solid $colorBorder;
+        border-bottom: 1px solid $colorBorder;
+        border-left: 1px solid $colorBorder;
+        padding: 8px;
+        &:first-child {
+            border-left: 0;
+        }
+        color: $colorHeader;
+    }
+
+    .table-item {
+        border-top: 1px solid $colorBorder;
+        border-bottom: 1px solid $colorBorder;
+        border-left: 1px solid $colorBorder;
+        .content {
+            padding: 8px;
+        }
+    }
+}
+.table-new-button {
+    padding: 8px;
+    color: $colorHeader;
+    border-top: 1px solid $colorBorder;
+    border-bottom: 1px solid $colorBorder;
+    cursor: pointer;
+}
+.container-pagination {
+    display: flex;
+    width: 100%;
+    border-top: 1px solid $colorBorder;
+    border-bottom: 1px solid $colorBorder;
+    padding: 8px;
+    .content-pagination {
+        width: fit-content;
+        display: flex;
+        margin-left: auto;
+        margin-right: 30px;
+        border: 1px solid $colorBorder;
+        background: rgb(16, 188, 231);
+        .item-paginations {
+            cursor: pointer;
+            border-left: 1px solid $colorBorder;
+            width: 30px;
+            text-align: center;
+            height: 30px;
+            line-height: 30px;
+            color: white;
+            &:first-child {
+                border-left: 0;
+            }
+        }
+    }
+}
